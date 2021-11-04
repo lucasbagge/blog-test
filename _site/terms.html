@@ -86,29 +86,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Blog: About this blog</title>
+  <title>Blog: Term</title>
 
-  <meta property="description" itemprop="description" content="Some additional details about the blog"/>
+  <meta property="description" itemprop="description" content="Some explanation of tools and methods."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Blog: About this blog"/>
+  <meta property="og:title" content="Blog: Term"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Some additional details about the blog"/>
+  <meta property="og:description" content="Some explanation of tools and methods."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Blog"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Blog: About this blog"/>
-  <meta property="twitter:description" content="Some additional details about the blog"/>
+  <meta property="twitter:title" content="Blog: Term"/>
+  <meta property="twitter:description" content="Some explanation of tools and methods."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About this blog"]},{"type":"character","attributes":{},"value":["Some additional details about the blog"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Term"]},{"type":"character","attributes":{},"value":["Some explanation of tools and methods.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2053,7 +2053,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About this blog","description":"Some additional details about the blog","authors":[]}
+{"title":"Term","description":"Some explanation of tools and methods.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2077,14 +2077,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About this blog</h1>
+<h1>Term</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Some additional details about the blog</p></p>
+<p><p>Some explanation of tools and methods.</p></p>
 </div>
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#dso">DSO</a></li>
+</ul>
+</nav>
+</div>
+<h2 id="dso">DSO</h2>
+<ul>
+<li><strong>COGS Payment date</strong> (our first date): where the payment is made to supplier.</li>
+<li><strong>B/L date</strong>: Det er din sikkerhed for at lasten er ombord i et specifikt navngivet skib og sejlet.</li>
+<li><strong>Final docs sent</strong> (DimDocsSent): Vi sender scannet Copi af dokumenterne til kunden.</li>
+<li><strong>Payment receive</strong> (Revenue Payment Date): Vi modtager penge.</li>
+</ul>
+<p><span class="math display">\[
+DSO = Revenue Payment Date-COGS Payment Date
+\]</span></p>
+<p><span class="math display">\[
+\text{Docs turnaround} = DocsSent - BL Date
+\]</span></p>
+<p><span class="math display">\[
+COBL =  BL Date - COGS Payment Date
+\]</span> <span class="math display">\[
+DORE = Revenue Payment Date - DocsSent
+\]</span></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2093,6 +2119,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

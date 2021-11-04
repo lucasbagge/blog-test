@@ -1,9 +1,37 @@
 ---
-title: "About this blog"
+title: "Term"
 description: |
-  Some additional details about the blog
+  Some explanation of tools and methods.
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+## DSO
+
+* **COGS Payment date** (our first date): where the payment is made to supplier. 
+* **B/L date**: Det er din sikkerhed for at lasten er ombord i et specifikt navngivet skib og sejlet. 
+* **Final docs sent** (DimDocsSent): Vi sender scannet Copi af dokumenterne til kunden.
+* **Payment receive** (Revenue Payment Date): Vi modtager penge.
+
+
+$$
+DSO = Revenue Payment Date-COGS Payment Date
+$$
+
+$$
+\text{Docs turnaround} = DocsSent - BL Date
+$$
+
+$$
+COBL =  BL Date - COGS Payment Date
+$$
+$$
+DORE = Revenue Payment Date - DocsSent
+$$
+

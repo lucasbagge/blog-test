@@ -6,22 +6,22 @@
       "description": "Some additional details about the blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-27T16:23:09+02:00"
+      "last_modified": "2021-11-04T09:49:52+01:00"
     },
     {
       "path": "index.html",
-      "title": "Blog",
+      "title": "Container market outlook",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-27T16:23:10+02:00"
+      "last_modified": "2021-11-04T09:50:56+01:00"
     },
     {
       "path": "terms.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "Term",
+      "description": "Some explanation of tools and methods.\n",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-10-27T16:23:10+02:00"
+      "contents": "\r\n\r\nContents\r\nDSO\r\n\r\nDSO\r\nCOGS Payment date (our first date): where the payment is made to supplier.\r\nB/L date: Det er din sikkerhed for at lasten er ombord i et specifikt navngivet skib og sejlet.\r\nFinal docs sent (DimDocsSent): Vi sender scannet Copi af dokumenterne til kunden.\r\nPayment receive (Revenue Payment Date): Vi modtager penge.\r\n\\[\r\nDSO = Revenue Payment Date-COGS Payment Date\r\n\\]\r\n\\[\r\n\\text{Docs turnaround} = DocsSent - BL Date\r\n\\]\r\n\\[\r\nCOBL =  BL Date - COGS Payment Date\r\n\\] \\[\r\nDORE = Revenue Payment Date - DocsSent\r\n\\]\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-11-04T09:49:55+01:00"
     }
   ],
   "collections": ["posts/posts.json"]
